@@ -17,6 +17,6 @@ Each user has sets like so:<br>
 The postmap is named like so: "post:Simon"<br>
 Each post in the map has the timestamp as the key, and the message as the value.
 
-Followers and Following are both implemented in redis as lists, so we LPUSH when adding new followers.
-These lists are keyed like so: "following:Simon" and "followedby:Simon"
+Followers and Following are both implemented in redis as lists, so we LPUSH when adding new followers.<br>
+These lists are keyed like so: "following:Simon" and "followedby:Simon"<br>
 We use LREM to remove specifically on the username.
